@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *This project has been created as part of the 42 curriculum by men-naim.*
 
 # Libft
@@ -110,3 +111,6 @@ A few choices I made:
 - W3Schools, Stack Overflow, GeeksforGeeks and Google, for C concepts and examples
 - YouTube, for visual and deeper explanations
 - AI, to explore subjects in more depth.
+=======
+# Libft-42
+>>>>>>> 39c57ca2dd0aa09d0888d8a6c8f8af280c5d902e
