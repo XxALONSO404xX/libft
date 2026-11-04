@@ -1,0 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: men-naim <men-naim@student.1337.ma>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/29 17:12:00 by men-naim          #+#    #+#             */
+/*   Updated: 2026/10/29 17:12:03 by men-naim         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	ft_lstclear(t_list **lst, void (*del)(void *))
+{
+	t_list	*helper;
+
+	if (!lst || !del)
+		return ;
+	while (*lst)
+	{
+		helper = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = helper;
+	}
+}
