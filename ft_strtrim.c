@@ -20,12 +20,12 @@ char	*ft_strtrim(char const *s, char const *set)
 
 	if (!s || !set)
 		return (NULL);
-	end_idx = ft_strlen(s) - 1;
+	end_idx = ft_strlen(s);
 	start_idx = 0;
 	while (*(s + start_idx) && ft_strchr(set, *(s + start_idx)))
 		start_idx++;
-	while (end_idx > start_idx && ft_strchr(set, *(s + end_idx)))
+	while (end_idx > start_idx && ft_strchr(set, *(s + end_idx - 1)))
 		end_idx--;
-	str = ft_substr(s, start_idx, (end_idx - start_idx) + 1);
+	str = ft_substr(s, start_idx, end_idx - start_idx);
 	return (str);
 }
