@@ -14,7 +14,7 @@ OBJS = $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	ar rv $(NAME) $(OBJS)
 
 %.o:%.c $(header)
 	$(CC) $(CFLAGS) -c $< -o $@
@@ -28,3 +28,5 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
+
+
