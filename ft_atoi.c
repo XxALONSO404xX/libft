@@ -6,7 +6,7 @@
 /*   By: men-naim <men-naim@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 11:23:49 by men-naim          #+#    #+#             */
-/*   Updated: 2026/10/15 11:58:51 by men-naim         ###   ########.fr       */
+/*   Updated: 2026/11/05 20:39:42 by men-naim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static int	is_sign(const char c)
 
 int	ft_atoi(const char *nptr)
 {
-	long	result;
+	int		result;
 	int		sign;
 	int		i;
 
